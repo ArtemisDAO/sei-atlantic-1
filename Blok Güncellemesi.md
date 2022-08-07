@@ -1,15 +1,15 @@
 # 1862331. blok ulaşanlar 1.1.0beta güncellemesi yapsın !
-...
+```
 cd $HOME && rm $HOME/sei-chain -rf
 git clone https://github.com/sei-protocol/sei-chain.git && cd $HOME/sei-chain
 git checkout 1.1.0beta
 make install
 sudo systemctl daemon-reload
 systemctl restart seid && journalctl -fu seid -o cat
-...
+```
 
 #EXİT CODE hatası alırsanız!
-...
+```
 wget -O go1.18.2.linux-amd64.tar.gz https://golang.org/dl/go1.18.2.linux-amd64.tar.gz
 rm -rf /usr/local/go && tar -C /usr/local -xzf go1.18.2.linux-amd64.tar.gz && rm go1.18.2.linux-amd64.tar.gz
 echo 'export GOROOT=/usr/local/go' >> $HOME/.bash_profile
@@ -29,7 +29,7 @@ mv ~/go/bin/seid /usr/local/bin/seid
 mv $HOME/sei-chain $HOME/sei
 systemctl restart seid
 journalctl -fu seid -o cat
-...
+```
 
 
 
